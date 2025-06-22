@@ -1,64 +1,65 @@
 body{
-  margin: 0 auto;
-  padding: 0 20px;
+margin: 0 auto;
+padding: 0 20px;
+overflow-x: hidden;
 }
 .address {
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.6px;
-    width: 240px;
-    height: 98px;
-    list-style: none;
+display: flex;
+flex-direction: column;
+font-size: 18px;
+font-weight: 400;
+line-height: 24.6px;
+width: 240px;
+height: 98px;
+list-style: none;
 }
 .header {
-  position: relative;
-   display:flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px;
-   height: 293px;
+position: relative;
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+height: 293px;
 }
 .text-column {
-    margin: 24px;
-    margin-top: 3px;
-    padding-right: 24px;
-    width: 693px;
+margin: 24px;
+margin-top: 3px;
+padding-right: 24px;
+width: 693px;
 }
 .logo-center {
-  margin-top: 92px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+margin-top: 92px;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 .head-logo-image {
-  width: 148px;
-  height: 104px;
+width: 148px;
+height: 104px;
 }
 .nav-left ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: circle;
+display: flex;
+padding: 0;
+margin: 0;
+list-style: circle;
 }
 .nav-left li {
-  margin-right: 20px;
+margin-right: 20px;
 }
 .nav-left {
-  display: flex;
-  gap: 29.3;
-  font-size: 18px;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  margin-left: 40px; 
+display: flex;
+gap: 29.3px;
+font-size: 18px;
+text-underline-offset: 4px;
+text-decoration-thickness: 1px;
+margin-left: 40px;
 }
-.underline{
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px
+.underline {
+text-decoration: underline;
+text-underline-offset: 4px;
+text-decoration-thickness: 1px
 }
-.nav-left-1{
+.nav-left-1 {
 font-weight: 400;
 font-size: 18px;
 color: #000;
@@ -68,121 +69,117 @@ padding-right: 18px;
 .nav-left li.no-marker {
   list-style: none;
 }
-.nav-left-2{
+.nav-left-2 {
 width: 169px;
 height: 22px;
 padding-right: 18.52px;
 }
-.nav-left-3{
+.nav-left-3 {
 width: 129px;
 height: 22px;
 }
 .cover {
-  position: relative;
-  height: 757px;
-  width: 1100px;
-  margin-bottom: 100px;
+position: relative;
+height: 757px;
+width: 1100px;
+margin-bottom: 100px;
 }
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
-  z-index: 1; /* Убедитесь, что он выше фона, но ниже текста и изображений */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
+z-index: 1; /* Убедитесь, что он выше фона, но ниже текста и изображений */
 }
 .cover-container {
-  position: relative;
-  display: inline-block; /* или block, если нужно */
+position: relative;
+display: inline-block; /* или block, если нужно */
 }
 .cover-img {
-  height: 757px;
-  width: 1100px;
-  display: block;
+height: 757px;
+width: 1100px;
+display: block;
 }
 .cover_description {
-  position: absolute; /* или оставить статичным, если не нужно абсолютное позиционирование */
-  bottom: 50px; /* отступ снизу */
-  left: 50px;   /* отступ слева */
-  right: 20px;  /* чтобы не выходить за границы справа */
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* по вертикали по центру */
-  z-index: 2;
-  text-transform: uppercase;
-  width: 1000px;
-  height: 51px;
+position: absolute; /* или оставить статичным, если не нужно абсолютное позиционирование */
+bottom: 50px; /* отступ снизу */
+left: 50px;   /* отступ слева */
+right: 20px;  /* чтобы не выходить за границы справа */
+display: flex;
+justify-content: space-between;
+align-items: center; /* по вертикали по центру */
+z-index: 2;
+text-transform: uppercase;
+width: 1000px;
+height: 51px;
 }
-
-.cover_description_text{
-  color: #fff;
-  font-size: 22px;
-  bottom: 0;
-  word-spacing: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400px;
-  line-height: 127%;
+.cover_description_text {
+color: #fff;
+font-size: 22px;
+bottom: 0;
+word-spacing: 10px;
+font-family: "Raleway", sans-serif;
+font-weight: 400;
+line-height: 127%;
 }
-.highlighted_letter{
-   padding: 0 0.5em;
-
+.highlighted_letter {
+padding: 0 0.5em;
 }
 /* Можно задать вертикальное расположение по вертикали */
 .cover-title {
-  position: absolute;
-  color: #fff;
- z-index: 2;
- width: 1000px;
- height: 385px;
- top: 165px;
- right: 50px;
+position: absolute;
+color: #fff;
+z-index: 2;
+width: 1000px;
+height: 385px;
+top: 165px;
+right: 50px;
 }
 .aligned-text_left_ono {
-  position: absolute;
-  top: 0px;        /* у верхней границы */
-  left: 4px;       /* у левой границы */
-  font-family: "Raleway", sans-serif;
-  font-size: 100px;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  line-height: 115%;
-  font-weight: 700;
+position: absolute;
+top: 0px;        /* у верхней границы */
+left: 4px;       /* у левой границы */
+font-family: "Raleway", sans-serif;
+font-size: 100px;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+line-height: 115%;
+font-weight: 700;
 }
 .aligned-text_tebe {
-  position: absolute;
-  left:50%;
-  top: 50%;
-  font-size: 100px;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.3em;
-  line-height: 115%;
-  font-weight: 700;
-  text-align: center;
+position: absolute;
+left:50%;
+top: 50%;
+font-size: 100px;
+transform: translate(-50%, -50%);
+text-transform: uppercase;
+font-family: "Raleway", sans-serif;
+letter-spacing: 0.3em;
+line-height: 115%;
+font-weight: 700;
+text-align: center;
 }
 .aligned-text_nado {
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  font-size: 100px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.3em;
-  line-height: 115%;
-  font-weight: 700;
-  text-align:right;
+position: absolute;
+right: 0;
+bottom: 0px;
+font-size: 100px;
+text-transform: uppercase;
+font-family: "Raleway", sans-serif;
+letter-spacing: 0.3em;
+line-height: 115%;
+font-weight: 700;
+text-align:right;
 }
-
-/* Для текста внутри заголовка можно дополнительно стилизовать */
 .aligned-text {
-  display: inline-block;
+display: inline-block;
 }
 .cover-button {
-  position: absolute;
-  bottom: 5px;
-  right: 20px;
+position: absolute;
+bottom: 5px;
+right: 20px;
 font-family: "Raleway", sans-serif;
 font-weight: 500;
 font-size: 22px;
@@ -196,46 +193,43 @@ width: 256px; /* ширина */
 height: 51px; /* высота */
 }
 .lots_card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px; /* расстояние между карточками */
-  list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 25px; /* расстояние между карточками */
+list-style: none;
 }
 .lots_card-list-item {
-   flex: 1 1 calc(33.333% - 20px);
-  box-sizing: border-box;
+flex: 1 1 calc(33.333% - 20px);
+box-sizing: border-box;
 }
 .card {
-  position: relative;
+position: relative;
 }
-/* Стиль для контейнера изображения */
 .image-container {
-  height: 596px;
-  position: relative;
+height: 596px;
+position: relative;
 }
-/* Изображение занимает всю площадь контейнера */
 .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
-/* Текст поверх изображения */
 .card-caption {
-  position: absolute;
-  top:0;
-  left:50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  width:100%;
-  height:100%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center; /* по вертикали центрировать */
-  background-color: rgba(0,0,0,0.4); /* полупрозрачный фон для читаемости */
-  padding:10px; /* отступы внутри */
-  color:#fff; /* цвет текста */
+position: absolute;
+top:0;
+left:50%;
+transform: translateX(-50%);
+bottom: 0;
+width:100%;
+height:100%;
+display:flex;
+flex-direction: column;
+justify-content: center; /* по вертикали центрировать */
+background-color: rgba(0,0,0,0.4); /* полупрозрачный фон для читаемости */
+padding:10px; /* отступы внутри */
+color:#fff; /* цвет текста */
 }
-.card_text_1{
+.card_text_1 {
 font-weight: 400;
 font-size: 20px;
 line-height: 120%;
@@ -243,13 +237,11 @@ color: #fff;
 height: 144px;
 width: 254px;
 position: absolute;
-  bottom: 20px; /* снизу контейнера */
-  left: 50%; /* по горизонтали в центре */
-  transform: translateX(-50%); 
-  
+bottom: 20px; /* снизу контейнера */
+left: 50%; /* по горизонтали в центре */
+transform: translateX(-50%); 
 }
-
-.card_text_2{
+.card_text_2 {
 position: absolute;
 font-weight: 400;
 font-size: 20px;
@@ -258,12 +250,10 @@ color: #fff;
 width: 254px;
 height: 360px;
 bottom: 0px; /* снизу контейнера */
-  left: 50%; /* по горизонтали в центре */
-  transform: translateX(-50%); 
-  
+left: 50%; /* по горизонтали в центре */
+transform: translateX(-50%);
 }
-
-.card_text_3{
+.card_text_3 {
 font-weight: 400;
 font-size: 20px;
 line-height: 120%;
@@ -272,11 +262,10 @@ position: absolute;
 bottom: 20px;
 width: 254px;
 height: 264px;
-  left: 50%; /* по горизонтали в центре */
-  transform: translateX(-50%); 
+left: 50%; /* по горизонтали в центре */
+transform: translateX(-50%);
 }
-
-.card_title{
+.card_title {
 font-weight: 700;
 font-size: 22px;
 line-height: 120%;
@@ -291,7 +280,13 @@ top: 48px; /* вверху карточки */
 left: 50%; /* по горизонтали в центре */
 transform: translateX(-50%)
 }
-.lots_heading{
+.first-lot-img,
+.Second-lot-img,
+.Three-lot-img {
+max-width: 100%;
+height: auto;
+}
+.lots_heading {
 font-weight: 700;
 font-size: 40px;
 text-transform: uppercase;
@@ -300,64 +295,51 @@ font-family: "Raleway", sans-serif;
 padding-left: 40px;
 padding-bottom: 20px;
 }
-.look_more{
+.look_more {
 width: 192px;
 height: 25px;
 margin-left: 40px;
 margin-top: 36px;
-
 }
 .about {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Левая колонка — по размеру карточки/логотипа, правая — всё остальное */
-  align-items: start; /* Выравнивание по верхнему краю */
-  gap: 20px; /* Расстояние между колонками */
-  padding-top: 80px;
+display: grid;
+grid-template-columns: auto 1fr; /* Левая колонка — по размеру карточки/логотипа, правая — всё остальное */
+align-items: start; /* Выравнивание по верхнему краю */
+gap: 20px; /* Расстояние между колонками */
+padding-top: 80px;
 }
-/* Контейнер для левой части (логотип + возможная карточка) */
 .about-header {
-  display: grid;
-  grid-template-rows: auto auto; /* Можно добавить строки для карточки и логотипа */
-  align-items: start;
-  
+display: grid;
+grid-template-rows: auto auto; /* Можно добавить строки для карточки и логотипа */
+align-items: start;
 }
-/* Левая колонка — содержит логотип внутри блока с фиксированными размерами */
 .left-column {
-  display: flex;
-  justify-content: center;
-  padding-left: 47px;
-   /* Центрировать по горизонтали */
+display: flex;
+justify-content: center;
+padding-left: 47px;
 }
-/* Контейнер для логотипа с фоном и кругом */
 .logo-container {
-  width: 240px; /* фиксированная ширина */
-  height: 240px; /* фиксированная высота */
-  background-color: black;
-  border-radius: 50%; /* делаем круглый */
-  display: flex; /* для центрирования логотипа внутри */
-  justify-content: center;
-  align-items: center;
+width: 240px; /* фиксированная ширина */
+height: 240px; /* фиксированная высота */
+background-color: black;
+border-radius: 50%; /* делаем круглый */
+display: flex; /* для центрирования логотипа внутри */
+justify-content: center;
+align-items: center;
 }
-/* Логотип внутри контейнера — белый цвет */
 .white-logo {
-  width: 148px; /* или любой другой размер логотипа */
-  height: 114px;
-  
+width: 148px; /* или любой другой размер логотипа */
+height: 114px;
 }
-/* Для этого можно задать верхний отступ так, чтобы он оказался на одной линии с центром круга */
-.about-title {
-  margin-top: calc(80px / 2 - (высота заголовка /2));
-}
-/* Или более универсально — использовать flexbox в .about-header */
 .about-header {
-  display: flex;
-  align-items: center; /* вертикальное выравнивание по центру */
+display: flex;
+align-items: center; /* вертикальное выравнивание по центру */
 }
 .left-column {
-  display: flex;
+display: flex;
 }
 .about-title {
-  margin-left: 20px; /* отступ слева от логотипа и круга */
+margin-left: 20px; /* отступ слева от логотипа и круга */
 font-weight: 700;
 font-size: 40px;
 text-transform: uppercase;
@@ -365,15 +347,15 @@ color: #000;
 font-family: "Raleway", sans-serif;
 }
 .about_text_section {
- width: 693px; /* задайте нужную ширину */
-  height: 449px; /* задайте нужную высоту */
-  margin-left: 70px;
-  position: relative;
-  top: 85px;   /* смещение вниз */
-  left: 0px;
+width: 693px; /* задайте нужную ширину */
+height: 449px; /* задайте нужную высоту */
+margin-left: 70px;
+position: relative;
+top: 85px;   /* смещение вниз */
+left: 0px;
 }
 .about_text_about_text_1 {
-  margin-top: 100px;
+margin-top: 100px;
 font-weight: 400;
 font-size: 20px;
 line-height: 120%;
@@ -382,9 +364,9 @@ height: 120px;
 width: 610px;
 }
 .about_text_about_text_2 {
-  margin-top: 24px;
-  margin-bottom: 13px;
-  font-weight: 400;
+margin-top: 24px;
+margin-bottom: 13px;
+font-weight: 400;
 font-size: 20px;
 line-height: 120%;
 color: #000;
@@ -392,77 +374,73 @@ height: 168px;
 width: 610px;
 }
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding:20px;
-  height: 180px;
-  margin-top: 180px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding:20px;
+height: 180px;
+margin-top: 180px;
 }
 .footer-left,
 .footer-center,
 .footer-right {
-  flex:1;
-  min-width:150px;
+flex:1;
+min-width:150px;
 }
-/* Левый блок (номер + адрес) */
 .footer-left {
-  display:flex;
-  flex-direction:column;
-  width: 98px;
-  height: 264.57px;
-  margin-left: 50px;
+display:flex;
+flex-direction:column;
+width: 98px;
+height: 264.57px;
+margin-left: 50px;
 }
 .footer-address {
-  list-style:none;
+list-style:none;
 }
 .footer-address li {
-  margin-bottom:5px;
+margin-bottom:5px;
 }
-/* Центр (ссылки) */
 .footer-center {
-   display:flex;
-   flex-direction:column;
-   align-items:center;
-   margin-top:0;
-   text-align: center;
-    line-height: 0.8;
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:0;
+text-align: center;
+line-height: 0.8;
 }
 .footer-center ul {
-   list-style:none;
-   padding:0;
-   margin:0;
+list-style:none;
+padding:0;
+margin:0;
 }
 .footer-center li {
-   margin-bottom:8px;
-   margin-top: 1px;
-   margin-left: 177px;
+margin-bottom:8px;
+margin-top: 1px;
+margin-left: 177px;
 }
-/* Правый (иконки соцсетей) */
 .footer-right {
-   display:flex;
-   justify-content:flex-end;
-   align-items:flex-start; 
-   padding-top: 0px;
+display:flex;
+justify-content:flex-end;
+align-items:flex-start; 
+padding-top: 0px;
 }
 .social-links {
-   display:flex;
-   gap:30px;
-   list-style: none;
-   padding: 0; /* Убираем внутренние отступы */
-   margin: 0;
-   padding-right: 48px;
-   padding-top: 1px;
-   height: 48px;
-   width: 240px;
+display:flex;
+gap:30px;
+list-style: none;
+margin: 0;
+padding-right: 48px;
+padding-top: 1px;
+height: 48px;
+width: 240px;
 }
-.no-underline{
-  text-decoration: none;
+.no-underline {
+text-decoration: none;
 }
 .Vk-logo,
 .Yt-logo,
 .printerst-logo {
-   width:48px; 
-   height:auto; 
+width:48px; 
+height:auto; 
 }
 
