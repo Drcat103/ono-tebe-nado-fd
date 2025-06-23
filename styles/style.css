@@ -1,7 +1,8 @@
-body{
+body {
 margin: 0 auto;
 padding: 0 20px;
-overflow-x: hidden;
+max-width: 1100px;
+min-width: 1100px;
 }
 .address {
 display: flex;
@@ -239,7 +240,7 @@ width: 254px;
 position: absolute;
 bottom: 20px; /* снизу контейнера */
 left: 50%; /* по горизонтали в центре */
-transform: translateX(-50%); 
+transform: translateX(-50%);
 }
 .card_text_2 {
 position: absolute;
@@ -331,13 +332,6 @@ align-items: center;
 width: 148px; /* или любой другой размер логотипа */
 height: 114px;
 }
-.about-header {
-display: flex;
-align-items: center; /* вертикальное выравнивание по центру */
-}
-.left-column {
-display: flex;
-}
 .about-title {
 margin-left: 20px; /* отступ слева от логотипа и круга */
 font-weight: 700;
@@ -421,7 +415,7 @@ margin-left: 177px;
 .footer-right {
 display:flex;
 justify-content:flex-end;
-align-items:flex-start; 
+align-items:flex-start;
 padding-top: 0px;
 }
 .social-links {
@@ -440,7 +434,7 @@ text-decoration: none;
 .Vk-logo,
 .Yt-logo,
 .printerst-logo {
-width:48px; 
-height:auto; 
+width:48px;
+height:auto;
 }
 
