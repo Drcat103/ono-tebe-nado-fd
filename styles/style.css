@@ -1,6 +1,5 @@
 body {
 margin: 0 auto;
-padding: 0 20px;
 max-width: 1100px;
 min-width: 1100px;
 }
@@ -8,11 +7,14 @@ min-width: 1100px;
 display: flex;
 flex-direction: column;
 font-size: 18px;
-font-weight: 400;
+font-weight: 400; 
 line-height: 24.6px;
 width: 240px;
 height: 98px;
 list-style: none;
+font-family: "Raleway", sans-serif;
+font-style: normal;
+margin-right: 39px;
 }
 .header {
 position: relative;
@@ -29,7 +31,7 @@ padding-right: 24px;
 width: 693px;
 }
 .logo-center {
-margin-top: 92px;
+margin-top: 109px;
 position: absolute;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -50,34 +52,57 @@ margin-right: 20px;
 .nav-left {
 display: flex;
 gap: 29.3px;
+font-family: "Raleway", sans-serif;
+font-style: normal;
 font-size: 18px;
-text-underline-offset: 4px;
-text-decoration-thickness: 1px;
+font-weight: 400;
 margin-left: 40px;
-}
-.underline {
-text-decoration: underline;
-text-underline-offset: 4px;
-text-decoration-thickness: 1px
+padding-bottom: 5px;
 }
 .nav-left-1 {
 font-weight: 400;
 font-size: 18px;
 color: #000;
+padding-right: 7px;
 text-decoration: none;
-padding-right: 18px;
+
 }
 .nav-left li.no-marker {
-  list-style: none;
+list-style: none;
 }
 .nav-left-2 {
-width: 169px;
 height: 22px;
-padding-right: 18.52px;
+margin-right: 11.52px;
+text-decoration: none;
+border-bottom: 1.5px solid black; /* или любой цвет и толщина */
+padding-bottom: 0px;
+display: inline-block; /* чтобы ширина применялась только к содержимому */
+width: 144px;
+margin-left: 7px;
 }
 .nav-left-3 {
 width: 129px;
 height: 22px;
+text-decoration: none;
+border-bottom: 1.5px solid black; /* или любой цвет и толщина */
+padding-bottom: 0.1px;
+margin-left: 6px;
+}
+.info {
+text-decoration: none;
+display: inline-block; /* чтобы управлять шириной */
+border-bottom: 1.4px solid #000; /* линия подчеркивания */
+padding-bottom:0px; /* отступ между текстом и линией */
+line-height: 1.0;
+width: 130px; /* ширина линии, задайте по необходимости */
+}
+.num {
+text-decoration: none;
+display: inline-block; /* чтобы управлять шириной */
+border-bottom: 1.4px solid #000; /* линия подчеркивания */
+padding-bottom:0.1px; /* отступ между текстом и линией */
+line-height: 0.7;
+width: 136px; /* ширина линии, задайте по необходимости */
 }
 .cover {
 position: relative;
@@ -104,13 +129,13 @@ width: 1100px;
 display: block;
 }
 .cover_description {
-position: absolute; /* или оставить статичным, если не нужно абсолютное позиционирование */
-bottom: 50px; /* отступ снизу */
-left: 50px;   /* отступ слева */
-right: 20px;  /* чтобы не выходить за границы справа */
+position: absolute; 
+bottom: 48px; 
+left: 50px;   
+right: 20px;  
 display: flex;
 justify-content: space-between;
-align-items: center; /* по вертикали по центру */
+align-items: center; 
 z-index: 2;
 text-transform: uppercase;
 width: 1000px;
@@ -120,15 +145,12 @@ height: 51px;
 color: #fff;
 font-size: 22px;
 bottom: 0;
-word-spacing: 10px;
+padding-left: 1px;
+word-spacing: 18px;
 font-family: "Raleway", sans-serif;
 font-weight: 400;
 line-height: 127%;
 }
-.highlighted_letter {
-padding: 0 0.5em;
-}
-/* Можно задать вертикальное расположение по вертикали */
 .cover-title {
 position: absolute;
 color: #fff;
@@ -141,7 +163,7 @@ right: 50px;
 .aligned-text_left_ono {
 position: absolute;
 top: 0px;        /* у верхней границы */
-left: 4px;       /* у левой границы */
+left: 0px;       /* у левой границы */
 font-family: "Raleway", sans-serif;
 font-size: 100px;
 text-transform: uppercase;
@@ -151,8 +173,8 @@ font-weight: 700;
 }
 .aligned-text_tebe {
 position: absolute;
-left:50%;
-top: 50%;
+top: 195px;
+left: 522px;
 font-size: 100px;
 transform: translate(-50%, -50%);
 text-transform: uppercase;
@@ -162,16 +184,20 @@ line-height: 115%;
 font-weight: 700;
 text-align: center;
 }
+.last-letter {
+  display: inline-block;
+  transform: translateX(-8px);
+}
 .aligned-text_nado {
 position: absolute;
-right: 0;
+left:615px;
 bottom: 0px;
 font-size: 100px;
 text-transform: uppercase;
 font-family: "Raleway", sans-serif;
 letter-spacing: 0.3em;
 line-height: 115%;
-font-weight: 700;
+font-weight: 600;
 text-align:right;
 }
 .aligned-text {
@@ -179,8 +205,8 @@ display: inline-block;
 }
 .cover-button {
 position: absolute;
-bottom: 5px;
-right: 20px;
+bottom: 1px;
+right: 1px;
 font-family: "Raleway", sans-serif;
 font-weight: 500;
 font-size: 22px;
@@ -190,13 +216,18 @@ color: #ffffff;
 z-index: 1;
 background-color: transparent;
 border: 1px solid rgb(255, 255, 255);
-width: 256px; /* ширина */
-height: 51px; /* высота */
+width: 256px;
+height: 51px;
+}
+.lots {
+padding-top: 87px;
+padding-left: 3px;
 }
 .lots_card-list {
+padding: 0 20px;
 display: flex;
 flex-wrap: wrap;
-gap: 25px; /* расстояние между карточками */
+gap: 25px;
 list-style: none;
 }
 .lots_card-list-item {
@@ -217,7 +248,6 @@ object-fit: cover;
 }
 .card-caption {
 position: absolute;
-top:0;
 left:50%;
 transform: translateX(-50%);
 bottom: 0;
@@ -225,22 +255,25 @@ width:100%;
 height:100%;
 display:flex;
 flex-direction: column;
-justify-content: center; /* по вертикали центрировать */
-background-color: rgba(0,0,0,0.4); /* полупрозрачный фон для читаемости */
-padding:10px; /* отступы внутри */
-color:#fff; /* цвет текста */
+justify-content: center;
+background-color: rgba(0,0,0,0.4);
+padding:10px;
+color:#fff;
 }
 .card_text_1 {
 font-weight: 400;
 font-size: 20px;
 line-height: 120%;
 color: #fff;
-height: 144px;
-width: 254px;
+height: 170px;
+width: 250px;
 position: absolute;
-bottom: 20px; /* снизу контейнера */
+bottom: 20px; 
 left: 50%; /* по горизонтали в центре */
 transform: translateX(-50%);
+font-family: "Raleway", sans-serif;
+letter-spacing: 0.2px;
+
 }
 .card_text_2 {
 position: absolute;
@@ -248,11 +281,13 @@ font-weight: 400;
 font-size: 20px;
 line-height: 120%;
 color: #fff;
-width: 254px;
-height: 360px;
-bottom: 0px; /* снизу контейнера */
+width: 254px;/* 254px*/
+height: 405px;/* 360px*/
+bottom: 2px; /* снизу контейнера */
 left: 50%; /* по горизонтали в центре */
 transform: translateX(-50%);
+font-family: "Raleway", sans-serif;
+letter-spacing: 0.2px;
 }
 .card_text_3 {
 font-weight: 400;
@@ -260,11 +295,12 @@ font-size: 20px;
 line-height: 120%;
 color: #fff;
 position: absolute;
-bottom: 20px;
-width: 254px;
-height: 264px;
+bottom: 22px;
+width: 251px;/*width: 254px;height: 264px ли в центре */
+height: 290px;
 left: 50%; /* по горизонтали в центре */
 transform: translateX(-50%);
+font-family: "Raleway", sans-serif;
 }
 .card_title {
 font-weight: 700;
@@ -277,15 +313,17 @@ color: #fff;
 width: 254px;
 height: 110px;
 position: absolute;
-top: 48px; /* вверху карточки */
+top: 50px; /* вверху карточки */
 left: 50%; /* по горизонтали в центре */
-transform: translateX(-50%)
+transform: translateX(-50%);
+font-family: "Raleway", sans-serif;
 }
 .first-lot-img,
 .Second-lot-img,
 .Three-lot-img {
 max-width: 100%;
-height: auto;
+height: 596px;
+width: 334px;
 }
 .lots_heading {
 font-weight: 700;
@@ -293,21 +331,31 @@ font-size: 40px;
 text-transform: uppercase;
 color: #000;
 font-family: "Raleway", sans-serif;
-padding-left: 40px;
-padding-bottom: 20px;
+padding-left: 61px;
+padding-bottom: 27px;
+margin-top: -7px;
 }
 .look_more {
-width: 192px;
+font-size: 20px;
+width: 240px;
 height: 25px;
-margin-left: 40px;
-margin-top: 36px;
+margin-left: 61px;
+margin-top: 32px;
+font-family: "Raleway", sans-serif;
+letter-spacing: 0.6px;
+}
+.look_more a {
+text-decoration: none;
+border-bottom: 1px solid #000; /* линия подчеркивания */
+padding-bottom: 1px;
 }
 .about {
 display: grid;
 grid-template-columns: auto 1fr; /* Левая колонка — по размеру карточки/логотипа, правая — всё остальное */
 align-items: start; /* Выравнивание по верхнему краю */
 gap: 20px; /* Расстояние между колонками */
-padding-top: 80px;
+padding-top: 155px;
+padding-left: 23px;
 }
 .about-header {
 display: grid;
@@ -333,20 +381,21 @@ width: 148px; /* или любой другой размер логотипа */
 height: 114px;
 }
 .about-title {
-margin-left: 20px; /* отступ слева от логотипа и круга */
 font-weight: 700;
 font-size: 40px;
 text-transform: uppercase;
 color: #000;
 font-family: "Raleway", sans-serif;
+height: 49px;
+width: 300px;
+padding-top: 5px;
 }
 .about_text_section {
 width: 693px; /* задайте нужную ширину */
 height: 449px; /* задайте нужную высоту */
-margin-left: 70px;
+margin-left: 52px;
 position: relative;
-top: 85px;   /* смещение вниз */
-left: 0px;
+padding-top: 95px;   /* смещение вниз */
 }
 .about_text_about_text_1 {
 margin-top: 100px;
@@ -355,7 +404,8 @@ font-size: 20px;
 line-height: 120%;
 color: #000;
 height: 120px;
-width: 610px;
+width: 668px;
+font-family: "Raleway", sans-serif;
 }
 .about_text_about_text_2 {
 margin-top: 24px;
@@ -365,7 +415,8 @@ font-size: 20px;
 line-height: 120%;
 color: #000;
 height: 168px;
-width: 610px;
+width: 670px;
+font-family: "Raleway", sans-serif;
 }
 footer {
 display: flex;
@@ -373,7 +424,7 @@ justify-content: space-between;
 align-items: flex-start;
 padding:20px;
 height: 180px;
-margin-top: 180px;
+margin-top: 270px;
 }
 .footer-left,
 .footer-center,
@@ -384,15 +435,20 @@ min-width:150px;
 .footer-left {
 display:flex;
 flex-direction:column;
-width: 98px;
-height: 264.57px;
-margin-left: 50px;
+width: 264.57px;
+height: 98px;
+margin-left: 30px;
+font-family: "Raleway", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 135%;
+font-style: normal;
 }
 .footer-address {
 list-style:none;
 }
 .footer-address li {
-margin-bottom:5px;
+margin-bottom:1px;
 }
 .footer-center {
 display:flex;
@@ -400,7 +456,23 @@ flex-direction:column;
 align-items:center;
 margin-top:0;
 text-align: center;
-line-height: 0.8;
+line-height: 0.7;
+font-style: normal;
+}
+ul a {
+text-decoration: none;
+}
+.footer_loots{
+display: inline-block;
+border-bottom: 1px solid black;
+width: 145px;
+padding-bottom: 2px;
+}
+.footer_auc {
+display: inline-block;
+border-bottom: 1px solid black;
+width: 103px;
+padding-bottom: 2px;
 }
 .footer-center ul {
 list-style:none;
@@ -408,22 +480,27 @@ padding:0;
 margin:0;
 }
 .footer-center li {
-margin-bottom:8px;
-margin-top: 1px;
-margin-left: 177px;
+margin-bottom:7px;
+margin-top: 5px;
+margin-left: 105px;
+font-size: 18px;
+font-weight: 400;
+font-family: "Raleway", sans-serif;
+
 }
 .footer-right {
 display:flex;
 justify-content:flex-end;
 align-items:flex-start;
 padding-top: 0px;
+padding-right: 29px;
 }
 .social-links {
 display:flex;
-gap:30px;
+gap:48px;
 list-style: none;
 margin: 0;
-padding-right: 48px;
+padding-left: 0px;
 padding-top: 1px;
 height: 48px;
 width: 240px;
