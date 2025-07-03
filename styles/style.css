@@ -7,7 +7,7 @@ min-width: 1100px;
 display: flex;
 flex-direction: column;
 font-size: 18px;
-font-weight: 400; 
+font-weight: 400;
 line-height: 24.6px;
 width: 240px;
 height: 98px;
@@ -74,9 +74,9 @@ list-style: none;
 height: 22px;
 margin-right: 11.52px;
 text-decoration: none;
-border-bottom: 1.5px solid black; /* или любой цвет и толщина */
+border-bottom: 1.5px solid black;
 padding-bottom: 0px;
-display: inline-block; /* чтобы ширина применялась только к содержимому */
+display: inline-block;
 width: 144px;
 margin-left: 7px;
 }
@@ -84,25 +84,25 @@ margin-left: 7px;
 width: 129px;
 height: 22px;
 text-decoration: none;
-border-bottom: 1.5px solid black; /* или любой цвет и толщина */
+border-bottom: 1.5px solid black;
 padding-bottom: 0.1px;
 margin-left: 6px;
 }
 .info {
 text-decoration: none;
-display: inline-block; /* чтобы управлять шириной */
-border-bottom: 1.4px solid #000; /* линия подчеркивания */
-padding-bottom:0px; /* отступ между текстом и линией */
+display: inline-block;
+border-bottom: 1.4px solid #000;
+padding-bottom:0px;
 line-height: 1.0;
-width: 130px; /* ширина линии, задайте по необходимости */
+width: 130px;
 }
 .num {
 text-decoration: none;
-display: inline-block; /* чтобы управлять шириной */
-border-bottom: 1.4px solid #000; /* линия подчеркивания */
-padding-bottom:0.1px; /* отступ между текстом и линией */
+display: inline-block;
+border-bottom: 1.4px solid #000;
+padding-bottom:0.1px;
 line-height: 0.7;
-width: 136px; /* ширина линии, задайте по необходимости */
+width: 136px;
 }
 .cover {
 position: relative;
@@ -116,12 +116,12 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
-z-index: 1; /* Убедитесь, что он выше фона, но ниже текста и изображений */
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1;
 }
 .cover-container {
 position: relative;
-display: inline-block; /* или block, если нужно */
+display: inline-block;
 }
 .cover-img {
 height: 757px;
@@ -129,13 +129,13 @@ width: 1100px;
 display: block;
 }
 .cover_description {
-position: absolute; 
-bottom: 48px; 
-left: 50px;   
-right: 20px;  
+position: absolute;
+bottom: 48px;
+left: 50px;
+right: 20px;
 display: flex;
 justify-content: space-between;
-align-items: center; 
+align-items: center;
 z-index: 2;
 text-transform: uppercase;
 width: 1000px;
@@ -162,8 +162,8 @@ right: 50px;
 }
 .aligned-text_left_ono {
 position: absolute;
-top: 0px;        /* у верхней границы */
-left: 0px;       /* у левой границы */
+top: 0px;
+left: 0px;
 font-family: "Raleway", sans-serif;
 font-size: 100px;
 text-transform: uppercase;
@@ -268,8 +268,8 @@ color: #fff;
 height: 170px;
 width: 250px;
 position: absolute;
-bottom: 20px; 
-left: 50%; /* по горизонтали в центре */
+bottom: 20px;
+left: 50%;
 transform: translateX(-50%);
 font-family: "Raleway", sans-serif;
 letter-spacing: 0.2px;
@@ -281,10 +281,10 @@ font-weight: 400;
 font-size: 20px;
 line-height: 120%;
 color: #fff;
-width: 254px;/* 254px*/
-height: 405px;/* 360px*/
-bottom: 2px; /* снизу контейнера */
-left: 50%; /* по горизонтали в центре */
+width: 254px;
+height: 405px;
+bottom: 2px;
+left: 50%;
 transform: translateX(-50%);
 font-family: "Raleway", sans-serif;
 letter-spacing: 0.2px;
@@ -296,9 +296,9 @@ line-height: 120%;
 color: #fff;
 position: absolute;
 bottom: 22px;
-width: 251px;/*width: 254px;height: 264px ли в центре */
+width: 251px;
 height: 290px;
-left: 50%; /* по горизонтали в центре */
+left: 50%;
 transform: translateX(-50%);
 font-family: "Raleway", sans-serif;
 }
@@ -313,8 +313,8 @@ color: #fff;
 width: 254px;
 height: 110px;
 position: absolute;
-top: 50px; /* вверху карточки */
-left: 50%; /* по горизонтали в центре */
+top: 50px;
+left: 50%;
 transform: translateX(-50%);
 font-family: "Raleway", sans-serif;
 }
@@ -346,20 +346,20 @@ letter-spacing: 0.6px;
 }
 .look_more a {
 text-decoration: none;
-border-bottom: 1px solid #000; /* линия подчеркивания */
+border-bottom: 1px solid #000;
 padding-bottom: 1px;
 }
 .about {
 display: grid;
-grid-template-columns: auto 1fr; /* Левая колонка — по размеру карточки/логотипа, правая — всё остальное */
-align-items: start; /* Выравнивание по верхнему краю */
-gap: 20px; /* Расстояние между колонками */
+grid-template-columns: auto 1fr;
+align-items: start;
+gap: 20px;
 padding-top: 155px;
 padding-left: 23px;
 }
 .about-header {
 display: grid;
-grid-template-rows: auto auto; /* Можно добавить строки для карточки и логотипа */
+grid-template-rows: auto auto;
 align-items: start;
 }
 .left-column {
@@ -368,16 +368,16 @@ justify-content: center;
 padding-left: 47px;
 }
 .logo-container {
-width: 240px; /* фиксированная ширина */
-height: 240px; /* фиксированная высота */
+width: 240px;
+height: 240px;
 background-color: black;
-border-radius: 50%; /* делаем круглый */
-display: flex; /* для центрирования логотипа внутри */
+border-radius: 50%;
+display: flex;
 justify-content: center;
 align-items: center;
 }
 .white-logo {
-width: 148px; /* или любой другой размер логотипа */
+width: 148px;
 height: 114px;
 }
 .about-title {
@@ -391,11 +391,11 @@ width: 300px;
 padding-top: 5px;
 }
 .about_text_section {
-width: 693px; /* задайте нужную ширину */
-height: 449px; /* задайте нужную высоту */
+width: 693px;
+height: 449px;
 margin-left: 52px;
 position: relative;
-padding-top: 95px;   /* смещение вниз */
+padding-top: 95px;
 }
 .about_text_about_text_1 {
 margin-top: 100px;
@@ -462,7 +462,7 @@ font-style: normal;
 ul a {
 text-decoration: none;
 }
-.footer_loots{
+.footer_loots {
 display: inline-block;
 border-bottom: 1px solid black;
 width: 145px;
