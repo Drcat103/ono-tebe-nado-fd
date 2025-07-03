@@ -1,1 +1,1 @@
-git@github.com:Drcat103/Ono-tebe-nado.git
+https://github.com/Drcat103/ono-tebe-nado-fd
