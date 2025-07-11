@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 96px;
-  padding-bottom: 84px;
+  padding-bottom: 87px;
 }
 
 .address {
@@ -23,7 +23,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   margin-right: 50px;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .address__link {
@@ -37,7 +37,7 @@ body {
   order: 2;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(-62%, -7%);
+  transform: translate(-62%, -4%);
   width: 136px;
 }
 
@@ -63,7 +63,7 @@ body {
   font-weight: 400;
   margin-left: 50px;
   padding-bottom: 5px;
-  transform: translateY(-9px);
+  transform: translateY(-6px);
   text-decoration-thickness: 0.5px;
   text-underline-offset: 4px;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .cover_description {
-  transform: translate(50px, 657px);
+  transform: translate(50px, 658px);
   bottom: 48px;
   left: 50px;
   right: 20px;
@@ -254,7 +254,7 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  transform: translate(2px, 269px);
+  transform: translate(-2px, 269px);
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.2px;
   padding-left: 40px;
@@ -353,6 +353,7 @@ body {
 .white-logo {
   width: 148px;
   height: 114px;
+  transform: translateY(2px);
 }
 
 .about-title {
@@ -364,7 +365,7 @@ body {
   height: 49px;
   width: 300px;
   padding-top: 3px;
-  padding-bottom: 95px;
+  padding-bottom: 97px;
 }
 
 .about_text_section {
@@ -378,7 +379,7 @@ body {
 
 .about_text_about_text {
   margin-bottom: 15px;
-  padding-bottom: 10px;
+  padding-bottom:10px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -405,7 +406,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 264.57px;
-  transform: translate(-790px, 24px);
+  transform: translate(-790px, 22px);
   margin-left: 30px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -430,7 +431,7 @@ footer {
   text-align: center;
   line-height: 0.7;
   font-style: normal;
-  transform: translate(302px, 19px);
+  transform: translate(302px, 21px);
 }
 
 ul a {
@@ -471,7 +472,7 @@ ul a {
 .footer-right {
   display: flex;
   justify-content: flex-end;
-  transform: translate(270px, 17px);
+  transform: translate(270px, 19px);
   padding-top: 0px;
   padding-right: 29px;
 }
