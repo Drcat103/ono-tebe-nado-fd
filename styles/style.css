@@ -13,7 +13,6 @@ body {
 }
 
 .address {
-  order: 3;
   flex-direction: column;
   font-size: 18px;
   font-weight: 400;
@@ -22,6 +21,10 @@ body {
   list-style: none;
   font-family: "Raleway", sans-serif;
   font-style: normal;
+}
+
+.header__address {
+  order: 3;
   margin-right: 50px;
   padding-top: 3px;
 }
@@ -147,7 +150,6 @@ body {
   width: 256px;
   min-height: 51px;
   cursor: pointer;
-
 }
 
 .cover-title {
@@ -190,12 +192,11 @@ body {
 
 .last-letter {
   display: inline-block;
-
 }
 
 .aligned-text_right {
   display: block;
-  margin-left: 61.5%;
+  margin-right: -3%;
   margin-top: 20px;
   text-align: right;
   font-size: 100px;
@@ -230,13 +231,11 @@ body {
 
 .card {
   display: flex;
-
   flex-direction: column;
   /* overflow-x: auto;*/
 }
 
 .image-container {
-  height: 596px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -408,29 +407,18 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-
   min-width: 150px;
 }
 
-.footer-left {
-  order: 1;
-  width: 264.57px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 135%;
-  font-style: normal;
+.footer__address {
   margin-left: 50px;
-}
-
-.footer-address {
-  list-style: none;
+  margin-top: 5px;
 }
 
 .footer-address li {
@@ -438,11 +426,10 @@ footer {
 }
 
 .footer-center {
-  order: 2;
   text-align: center;
   line-height: 0.7;
   font-style: normal;
-  margin-top: 11px;
+  margin-top: 13px;
 }
 
 ul a {
@@ -453,7 +440,7 @@ ul a {
   display: inline-block;
   border-bottom: 1.5px solid black;
   width: 149px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .footer_auc {
@@ -470,15 +457,13 @@ ul a {
 }
 
 .footer-center li {
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   font-size: 18px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
-
 }
 
 .footer-right {
-  order: 1;
   margin-right: 50px;
   margin-top: 5px;
 
